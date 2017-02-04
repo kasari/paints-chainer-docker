@@ -11,4 +11,4 @@ RUN wget http://paintschainer.preferred.tech/downloads/unet_512_standard -P /Pai
 
 WORKDIR "/PaintsChainer-master"
 
-CMD python server.py -g -1 -ho ''
+CMD ["python", "server.py", "--gpu", "-1", "--host", "0.0.0.0"]
